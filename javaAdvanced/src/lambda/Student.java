@@ -1,4 +1,4 @@
-package collections;
+package lambda;
 
 public class Student implements Comparable<Student>{
 
