@@ -6,6 +6,7 @@ import com.example.b93Rest.model.User;
 import java.util.HashMap;
 import java.util.random.RandomGenerator;
 
+
 public class UserRepository {
 
     HashMap<Integer,User>db = new HashMap<>();

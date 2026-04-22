@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserController {
 
+
     private UserService userService;
 
     public UserController() {
@@ -22,6 +23,7 @@ public class UserController {
     }
 //    CRUD
 //    post,get, put/patch, delete
+
 
     @PostMapping("/create")
     public Integer createUser(@RequestBody CreateUserRequestDto createUserRequestDto){
@@ -38,7 +40,7 @@ public class UserController {
         return CreateUserResponse.modelToDto(userService.create(createUserRequestDto));
 
     }
-
+    
     @GetMapping("/get")
     public GetUserResponse getUser(@RequestParam Integer id){
 
