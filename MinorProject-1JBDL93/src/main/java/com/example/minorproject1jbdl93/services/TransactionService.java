@@ -48,7 +48,6 @@ public class TransactionService {
 
     }
 
-
 /*
 * Issuance Logic
 *
@@ -120,7 +119,7 @@ public class TransactionService {
             }
         }
 
-        return transaction.getTxnId();
+        return savedTransaction.getTxnId();
 
     }
 
@@ -175,11 +174,11 @@ public class TransactionService {
             }
         }
 
-        return transaction.getTxnId();
+        return savedTransaction.getTxnId();
 
     }
 
-    private int calculateFine(Book book, Student student){
+    public int calculateFine(Book book, Student student){
 
         Transaction issuedTxn = this.transactionRepository.findTopByStudentAndBookAndTransactionTypeAndTransactionStatusOrderByIdDesc
                 (student,book,TransactionType.ISSUANCE,TransactionStatus.SUCCESS);
@@ -194,5 +193,9 @@ public class TransactionService {
         }
         return 0;
 
+    }
+
+    public int add(int a , int b){
+        return a+b+1;
     }
 }
