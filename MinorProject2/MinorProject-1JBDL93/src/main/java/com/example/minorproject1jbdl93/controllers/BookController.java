@@ -7,6 +7,8 @@ import com.example.minorproject1jbdl93.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/book")
 public class BookController {
@@ -23,5 +25,10 @@ public class BookController {
     @GetMapping("/get")
     public Book getBook(@RequestParam Long id){
         return this.bookService.get(id);
+    }
+
+    @GetMapping("/list")
+    public List<Book> listBooks(){
+        return this.bookService.getAll();
     }
 }

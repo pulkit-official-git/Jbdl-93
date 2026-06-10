@@ -48,6 +48,10 @@ public class BookService {
 
     }
 
+    public List<Book> getAll() {
+        return this.bookRepository.findAll();
+    }
+
 
     public List<Book> getBooksByStudentId(Long id) {
 
