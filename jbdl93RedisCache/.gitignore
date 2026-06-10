@@ -31,11 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Node / Frontend ###
-node_modules/
-dist/
-.vite/
-
-### macOS ###
-.DS_Store
