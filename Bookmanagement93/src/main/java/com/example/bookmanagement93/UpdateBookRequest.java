@@ -1,9 +1,5 @@
 package com.example.bookmanagement93;
 
-
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.util.Date;
@@ -14,25 +10,23 @@ import java.util.Date;
 @AllArgsConstructor
 @ToString
 @Builder
-public class CreateBookRequest {
+public class UpdateBookRequest {
 
-    @NotBlank
     private String name;
     private String author;
-    @Email
     private String authorEmail;
     private double price;
     private Genre genre;
 
-    public Book toBook() {
+    public Book toBook(){
         return Book.builder()
                 .name(name)
                 .author(author)
                 .authorEmail(authorEmail)
                 .price(price)
                 .genre(genre)
-                .createdOn(new Date())
                 .updatedOn(new Date())
                 .build();
+
     }
 }

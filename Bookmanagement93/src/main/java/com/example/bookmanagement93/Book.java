@@ -13,11 +13,11 @@ import java.util.Date;
 public class Book {
 
 
-    private int id;
+    private Integer id;
     private String name;
     private String author;
     private String authorEmail;
-    private double price;
+    private Double price;
     private Genre genre;
     private Date createdOn;
     private Date updatedOn;
