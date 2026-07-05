@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.order.grpc";
+option java_outer_classname = "OrderProto";
+
+package order;
+
+service OrderService {
+  rpc PlaceOrder (PlaceOrderRequest) returns (PlaceOrderResponse);
+}
+
+message PlaceOrderRequest {
+  string customer_name = 1;
+  string product_name = 2;
+  int32 quantity = 3;
+  double amount = 4;
+}
+
+message PlaceOrderResponse {
+  string order_id = 1;
+  string status = 2;
+  string message = 3;
+}

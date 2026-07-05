@@ -1,0 +1,4 @@
+com/example/ordersvc/OrderController.class
+com/example/ordersvc/NotificationClient.class
+com/example/ordersvc/OrderSvcApplication.class
+com/example/ordersvc/CreateOrderRequest.class

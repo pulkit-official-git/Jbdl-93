@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: notif-service
+  main:
+    web-application-type: none
+
+grpc:
+  server:
+    port: 9091
+    reflection-service-enabled: true
+
+logging:
+  level:
+    com.example.notif: INFO

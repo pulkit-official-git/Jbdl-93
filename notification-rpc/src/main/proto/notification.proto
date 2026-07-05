@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package notification;
+
+option java_multiple_files = true;
+
+
+message OrderRequest {
+
+  string orderId = 1;
+
+  string customerName = 2;
+
+  string productName = 3;
+
+}
+
+message NotificationResponse {
+
+  bool success = 1;
+
+  string message = 2;
+
+}
+
+service NotificationService {
+
+  rpc SendNotification(OrderRequest)
+      returns (NotificationResponse);
+
+}

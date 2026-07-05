@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: order-service
+  main:
+    web-application-type: none
+
+grpc:
+  server:
+    port: 9090
+    reflection-service-enabled: true
+  client:
+    notif-service:
+      address: static://localhost:9091
+      negotiationType: plaintext
+
+logging:
+  level:
+    com.example.order: INFO

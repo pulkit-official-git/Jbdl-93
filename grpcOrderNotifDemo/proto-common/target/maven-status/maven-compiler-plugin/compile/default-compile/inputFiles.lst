@@ -1,0 +1,6 @@
+/Users/apple/Downloads/grpcOrderNotifDemo/proto-common/target/generated-sources/protobuf/grpc-java/com/example/grpc/notif/NotificationServiceGrpc.java
+/Users/apple/Downloads/grpcOrderNotifDemo/proto-common/target/generated-sources/protobuf/java/com/example/grpc/notif/NotificationProto.java
+/Users/apple/Downloads/grpcOrderNotifDemo/proto-common/target/generated-sources/protobuf/java/com/example/grpc/notif/NotificationRequest.java
+/Users/apple/Downloads/grpcOrderNotifDemo/proto-common/target/generated-sources/protobuf/java/com/example/grpc/notif/NotificationRequestOrBuilder.java
+/Users/apple/Downloads/grpcOrderNotifDemo/proto-common/target/generated-sources/protobuf/java/com/example/grpc/notif/NotificationResponse.java
+/Users/apple/Downloads/grpcOrderNotifDemo/proto-common/target/generated-sources/protobuf/java/com/example/grpc/notif/NotificationResponseOrBuilder.java
